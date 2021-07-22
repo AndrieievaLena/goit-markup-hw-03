@@ -14,6 +14,15 @@
   --logo-color: #000000;
   --box-button: #f5f4fa;
   --footer-color: rgba(255, 255, 255, 0.6);
+  --dark-section: #2f303a;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 ul {
   list-style: none;
@@ -23,6 +32,16 @@ ul {
   background-color: var(--primary-text-color);
   color: var(--title-text-color);
   font-family: "roboto", sans-serif;
+}
+.conteiner {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0;
+}
+.header-section {
+  background-color: var(--white-color);
+  margin-bottom: 45px;
 }
 
 .logo-company {
@@ -68,7 +87,15 @@ ul {
   color: var(--accent-color);
 }
 /* Hero */
+.hero {
+  background-color: var(--dark-section);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white-color);
   text-transform: uppercase;
   font-weight: 900;
@@ -86,8 +113,15 @@ ul {
   letter-spacing: 0.06em;
 }
 /* section */
+
+.feature-list {
+  margin-top: 0;
+  margin-bottom: 95px;
+}
 .feature-list .title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -96,11 +130,15 @@ ul {
 }
 
 .description {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--second-text-color);
   font-size: 14px;
 }
 
 .section-title {
+  margin-bottom: 50px;
+  margin-top: 0;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
