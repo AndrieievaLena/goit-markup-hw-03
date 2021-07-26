@@ -247,14 +247,19 @@ img {
   padding-bottom: 86px;
 }
 
-.detalis {
+.detalis,
+.name-inform {
   margin: 0px;
 }
 .personal-info:not(:last-child) {
   margin-right: 30px;
 }
-.personal-info .name-inform {
+.photo-box .detalis {
   box-shadow: var(--footer-color);
+}
+.photo-box .personal-info {
+  border-bottom: 4px solid var(--border-color);
+  border-radius: 5px;
 }
 
 .team-title {
@@ -337,11 +342,11 @@ img {
   margin-top: 20px;
   margin-bottom: 0px;
 }
-.card-title {
-  box-shadow: var(--shadow);
+.card-content {
+  border: 2px solid var(--border-color);
 }
 .card-content {
-  padding: 18px 24px 54px;
+  padding: 18px 20px 54px;
 }
 /* footer */
 .section-footer {
