@@ -316,6 +316,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
   border-color: var(--border-color);
+  padding: 6px 22px;
 }
 .button-type .link:hover,
 .button-type .link:focus {
