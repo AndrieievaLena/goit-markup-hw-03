@@ -17,8 +17,9 @@
   --box-button: #f5f4fa;
   --footer-color: rgba(255, 255, 255, 0.6);
   --dark-section: #2f303a;
-  --card-set: 50px;
-  --shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --card-set: 30px;
+  --shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 html {
   box-sizing: border-box;
@@ -33,7 +34,8 @@ ul {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 .page {
   background-color: var(--primary-text-color);
@@ -112,7 +114,7 @@ img {
   margin-left: auto;
 }
 .contact-information .link {
-  color: var(--title-text-color);
+  color: var(--second-text-color);
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -135,28 +137,30 @@ img {
 .hero {
   background-color: var(--dark-section);
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-
+.size-box {
+  max-width: 680px;
+}
 .hero-title {
-  padding: 200px 222px 0px;
-  margin-top: 0;
-  margin-bottom: 30px;
   color: var(--white-color);
+  margin-top: 0px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
 }
+
 .detalis > .personal-info {
   box-shadow: var(--shadow);
 }
 .button {
   background-color: var(--accent-color);
   color: var(--white-color);
-  margin-bottom: 200px;
+  margin: 0px;
   font-family: "roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -164,6 +168,7 @@ img {
   letter-spacing: 0.06em;
   padding: 10px 32px;
   border-radius: 4px;
+  align-items: center;
 }
 /* section */
 
@@ -172,11 +177,14 @@ img {
 }
 .inform-positions {
   margin: 0;
+  padding: 0px;
   display: flex;
-  padding: 94px 0px;
 }
 .inform-positions .position + .position {
   margin-left: 30px;
+}
+.feature-list {
+  padding: 94px 0px;
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -185,7 +193,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
@@ -194,12 +202,14 @@ img {
   margin-bottom: 0;
   color: var(--second-text-color);
   font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  max-width: 270px;
 }
 /* Work-type */
 
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
+.section {
+  padding: 0px 0px 83px 0px;
 }
 .section-title {
   margin-bottom: 50px;
@@ -210,10 +220,6 @@ img {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 100px;
-}
-.work-type {
-  padding: 0px 0px 83px 0px;
 }
 .info-picture {
   display: flex;
@@ -225,10 +231,10 @@ img {
   margin-left: 30px;
 }
 /*Section team */
-.wall-team {
+.team {
   background-color: var(--secondary-primary-color);
 }
-.team-box {
+.wall-team {
   background-color: var(--secondary-primary-color);
 }
 .team-title {
@@ -244,7 +250,9 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-bottom: 86px;
+}
+.detalis {
+  padding: 0px;
 }
 
 .detalis,
@@ -256,10 +264,7 @@ img {
 }
 .photo-box .detalis {
   box-shadow: var(--footer-color);
-}
-.photo-box .personal-info {
-  border-bottom: 4px solid var(--border-color);
-  border-radius: 5px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -279,18 +284,20 @@ img {
   font-style: normal;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
+  line-height: 1.7;
 }
 /* potfolio */
 .button-type {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 94px;
   margin: 0px;
+  padding: 0px;
 }
-.button-type .link {
-  padding: 6px 22px;
+.button-box {
+  margin-bottom: 50px;
 }
+
 .button-type .btn-link + .btn-link {
   margin-left: 8px;
 }
@@ -298,7 +305,7 @@ img {
   background-color: var(--box-button);
   color: var(--title-text-color);
   font-family: "roboto", sans-serif;
-  line-height: 1.1;
+  line-height: 1.62;
   font-weight: 500;
   letter-spacing: 0.03em;
   text-align: center;
@@ -312,12 +319,17 @@ img {
   color: var(--white-color);
 }
 /* Main */
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .main-title {
   display: flex;
   flex-wrap: wrap;
-  padding: 24px 0 94px;
   margin-top: calc(-1 * var(--card-set));
   margin-left: calc(-1 * var(--card-set));
+  padding: 0px;
+  margin-bottom: 0;
 }
 .main-title > .card-title {
   flex-basis: calc(100% / 3 - var(--card-set));
@@ -356,8 +368,8 @@ img {
   color: var(--footer-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .contact-footer .link:hover,
@@ -366,17 +378,19 @@ img {
 }
 
 .contact-footer {
-  padding-bottom: 60px;
-  padding-left: 0px;
+  padding: 0px;
   margin: 0;
 }
 .contact-footer .link:not(:last-child) {
   margin-bottom: 9px;
 }
+.section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-logo {
   color: var(--white-color);
-  padding-top: 60px;
-  padding-bottom: 0px;
+  padding: 0px;
   margin: 0 0 20px 0;
 }
 .contact-footer .contact-link:not(:last-child) {
