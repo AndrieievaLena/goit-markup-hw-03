@@ -207,9 +207,13 @@ img {
   max-width: 270px;
 }
 /* Work-type */
-
 .section {
-  padding: 0px 0px 83px 0px;
+  padding: 0 0 94px 0;
+}
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-primary-color);
 }
 .section-title {
   margin-bottom: 50px;
